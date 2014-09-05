@@ -37,10 +37,6 @@ module.exports = function () {
         return res.json(200, undefined);
     });
 
-    router.route("/me").get(function (req, res, next) {
-        return res.json(200, undefined);
-    });
-
     router.route("/logout").get(function (req, res, next) {
         return res.json(200, undefined);
     });
