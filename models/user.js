@@ -13,25 +13,11 @@ var UserSchema = new Schema({
         required: true
     },
 
-    email: {
-        type: String,
-        required: true,
-        lowercase: true,
-        index: {
-            unique: true
-        }
-    },
-
     password: {
         type: String,
         required: true
-    },
-
-    active: {
-        type: Boolean,
-        default: false
     }
-
+    
 }, {
     toObject: {
         virtuals: true
@@ -70,7 +56,3 @@ UserSchema.methods.comparePassword = function (passw, cb) {
 };
 
 module.exports = mongoose.model('User', UserSchema);
-
-module.exports.schema.path('email').validate(function (value) {
-    return validator.isEmail(value);
-}, 'Invalid email address');
