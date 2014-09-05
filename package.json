@@ -19,7 +19,6 @@
         "morgan": "~1.2.2",
         "on-finished": "^2.1.0",
         "redis": "^0.12.1",
-        "response-time": "~2.0.1",
-        "validator": "~3.16.1"
+        "response-time": "~2.0.1"
     }
 }

@@ -1,7 +1,6 @@
 "use strict";
 
 var mongoose = require('mongoose'),
-    validator = require("validator"),
     bcrypt = require("bcryptjs"),
     Schema = mongoose.Schema;
 
@@ -17,7 +16,7 @@ var UserSchema = new Schema({
         type: String,
         required: true
     }
-    
+
 }, {
     toObject: {
         virtuals: true
