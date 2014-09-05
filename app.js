@@ -9,10 +9,7 @@ var debug = require('debug')('app:' + process.pid),
     config = require("./config.json"),
     mongoose_uri = process.env.MONGOOSE_URI || "localhost/express-jwt-auth",
     onFinished = require('on-finished'),
-    BadRequestError = require(path.join(__dirname, "errors", "BadRequestError.js")),
-    InternalServerError = require(path.join(__dirname, "errors", "InternalServerError.js")),
     NotFoundError = require(path.join(__dirname, "errors", "NotFoundError.js")),
-    UnauthorizedAccessError = require(path.join(__dirname, "errors", "UnauthorizedAccessError.js")),
     utils = require(path.join(__dirname, "utils.js")),
     unless = require('express-unless');
 
