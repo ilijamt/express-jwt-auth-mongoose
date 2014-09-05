@@ -3,7 +3,7 @@
     "version": "0.0.1",
     "private": true,
     "main": "app.js",
-    "packages": {
+    "dependencies": {
         "bcryptjs": "~2.0.2",
         "body-parser": "~1.0.0",
         "compression": "^1.0.11",
