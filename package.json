@@ -1,0 +1,25 @@
+{
+    "name": "express-jwt-auth",
+    "version": "0.0.1",
+    "private": true,
+    "main": "app.js",
+    "packages": {
+        "bcryptjs": "~2.0.2",
+        "body-parser": "~1.0.0",
+        "compression": "^1.0.11",
+        "cors": "^2.4.1",
+        "debug": "~0.7.4",
+        "express": "^4.2.0",
+        "express-jwt": "^0.3.1",
+        "express-unless": "*",
+        "hiredis": "^0.1.17",
+        "jsonwebtoken": "^0.4.1",
+        "lodash": "~2.4.1",
+        "mongoose": "~3.8.14",
+        "morgan": "~1.2.2",
+        "on-finished": "^2.1.0",
+        "redis": "^0.12.1",
+        "response-time": "~2.0.1",
+        "validator": "~3.16.1"
+    }
+}
