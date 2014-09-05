@@ -58,7 +58,7 @@ module.exports = function () {
     var router = new Router();
 
     router.route("/verify").get(function (req, res, next) {
-        return res.status(200);
+        return res.status(200).json(undefined);
     });
 
     router.route("/logout").get(function (req, res, next) {
